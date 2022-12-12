@@ -11,13 +11,13 @@ import operator
 import cv2
 
 # Carregando o modelo
-json_file = open("model-bw.json", "r")
+json_file = open("model.json", "r")
 model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(model_json)
 
 # Carregando os pesos no modelo
-loaded_model.load_weights("model-bw.h5")
+loaded_model.load_weights("model.h5")
 
 # Instanciando captura de video
 cap = cv2.VideoCapture(0)
@@ -65,7 +65,7 @@ while True:
     prediction = sorted(prediction.items(), key=operator.itemgetter(1), reverse=True)
     
     # Exibindo a previsão
-    cv2.putText(frame, prediction[0][0], (100, 120), cv2.FONT_HERSHEY_PLAIN, 3, (14,14,14), 3)    
+    cv2.putText(frame, prediction[0][0], (100, 120), cv2.FONT_HERSHEY_PLAIN, 3, (50,14,255), 3)     
     cv2.imshow("Frame", frame)
     
     # Interromper com a tecla ESC
