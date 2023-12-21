@@ -2,7 +2,7 @@
 
 ## Documento Técnico Científico
 
-Para uma compreensão mais aprofundada do projeto, consulte o [documento técnico-científico](assets/documento_tecnico-cientifico.pdf) que detalha a fundamentação teórica, metodologia e resultados obtidos.
+Para uma compreensão mais aprofundada do projeto, consulte o [documento técnico-científico](doc/documento_tecnico-cientifico.pdf) que detalha a fundamentação teórica, metodologia e resultados obtidos.
 
 ## Descrição do Projeto
 
